@@ -1,5 +1,7 @@
 # TDD solution of Pencils of rays (from Project Euler)
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 The intension of this program is to show how to do [TDD](https://en.wikipedia.org/wiki/Test-driven_development) (Test-Driven Development). 
 The solution will be very naive and simple. No optimizations or complex 
 algorithms will be used. 
@@ -39,3 +41,8 @@ command:
 ```
 python 3 -m unittest tests/test_main.py
 ```
+## Authors
+*   [Ricardo Miranda](https://github.com/ricardomiranda)
+
+## License
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
