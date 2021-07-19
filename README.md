@@ -18,6 +18,8 @@ We can verify that $R(0,100)=3019$ and $R(100,10000)=29750422$.
 
 Find $R(2 \cdot 10^6,10^9)$.
 
+![Pencils of rays](auxiliar/euler.372.en.png)
+
 *Note*: $\lfloor x \rfloor$ represents the floor function.
 
 ## Project Euler
