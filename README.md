@@ -46,7 +46,7 @@ The unit tests are developed using the unittest framework. Please install
 command:
 
 ```
-python 3 -m unittest tests/test_main.py
+python3 -m unittest discover -s tests/
 ```
 ## Authors
 *   [Ricardo Miranda](https://github.com/ricardomiranda)
