@@ -11,16 +11,21 @@ to illustrate TDD.
 
 ## Pencils of rays (problem 372)
 
-Let $R(M,N)$ be the number of lattice points $(x,y)$ which satisfy $M<x \le N, M<y \le N$, 
-and $\lfloor\frac{y^2}{x^2}\rfloor$ is odd.
+Let <img src="https://render.githubusercontent.com/render/math?math=R(M,N)"> 
+be the number of lattice points <img src="https://render.githubusercontent.com/render/math?math=(x,y)"> 
+which satisfy <img src="https://render.githubusercontent.com/render/math?math=M<x \le N, M<y \le N">, 
+and <img src="https://render.githubusercontent.com/render/math?math=\lfloor\frac{y^2}{x^2}\rfloor"> 
+is odd.
 
-We can verify that $R(0,100)=3019$ and $R(100,10000)=29750422$.
+We can verify that <img src="https://render.githubusercontent.com/render/math?math=R(0,100)=3019"> 
+and <img src="https://render.githubusercontent.com/render/math?math=R(100,10000)=29750422">.
 
-Find $R(2 \cdot 10^6,10^9)$.
+Find <img src="https://render.githubusercontent.com/render/math?math=R(2 \cdot 10^6,10^9)">.
 
 ![Pencils of rays](auxiliar/euler.372.en.png)
 
-*Note*: $\lfloor x \rfloor$ represents the floor function.
+*Note*: <img src="https://render.githubusercontent.com/render/math?math=\lfloor x \rfloor"> 
+represents the floor function.
 
 ## Project Euler
 
