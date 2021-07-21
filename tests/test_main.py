@@ -1,4 +1,5 @@
 import unittest
+from unittest.loader import makeSuite
 
 from app import main
 
@@ -31,3 +32,38 @@ class TestMain(unittest.TestCase):
         expected: int = 2
 
         self.assertEqual(first=expected, second=actual)
+
+    def test_is_odd_00(self) -> None:
+        actual: bool = main.is_odd(x=0)
+
+        self.assertFalse(actual)
+
+    def test_is_odd_01(self) -> None:
+        actual: bool = main.is_odd(x=1)
+
+        self.assertTrue(actual)
+
+    def test_is_odd_02(self) -> None:
+        actual: bool = main.is_odd(x=1563)
+
+        self.assertTrue(actual)
+
+    def test_is_odd_03(self) -> None:
+        actual: bool = main.is_odd(x=-1563)
+
+        self.assertTrue(actual)
+
+    def test_is_odd_04(self) -> None:
+        actual: bool = main.is_odd(x=-15632)
+
+        self.assertFalse(actual)
+
+    def test_is_odd_05(self) -> None:
+        actual: bool = main.is_odd(x=15632)
+
+        self.assertFalse(actual)
+
+    def test_is_odd_06(self) -> None:
+        actual: bool = main.is_odd(x=4)
+
+        self.assertFalse(actual)
