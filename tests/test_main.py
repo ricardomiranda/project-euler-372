@@ -67,3 +67,45 @@ class TestMain(unittest.TestCase):
         actual: bool = main.is_odd(x=4)
 
         self.assertFalse(actual)
+
+    def test_count_odd_numbers_00(self) -> None:
+        actual: int = main.count_odd_numbers(xs=[])
+        expected: int = 0
+
+        self.assertEqual(first=expected, second=actual)
+
+    def test_count_odd_numbers_01(self) -> None:
+        actual: int = main.count_odd_numbers(xs=[1])
+        expected: int = 1
+
+        self.assertEqual(first=expected, second=actual)
+
+    def test_count_odd_numbers_02(self) -> None:
+        actual: int = main.count_odd_numbers(xs=[1, 3])
+        expected: int = 2
+
+        self.assertEqual(first=expected, second=actual)
+
+    def test_count_odd_numbers_03(self) -> None:
+        actual: int = main.count_odd_numbers(xs=[2])
+        expected: int = 0
+
+        self.assertEqual(first=expected, second=actual)
+
+    def test_count_odd_numbers_04(self) -> None:
+        actual: int = main.count_odd_numbers(xs=[2, 22])
+        expected: int = 0
+
+        self.assertEqual(first=expected, second=actual)
+
+    def test_count_odd_numbers_05(self) -> None:
+        actual: int = main.count_odd_numbers(xs=[2, 22, -46])
+        expected: int = 0
+
+        self.assertEqual(first=expected, second=actual)
+
+    def test_count_odd_numbers_06(self) -> None:
+        actual: int = main.count_odd_numbers(xs=[1, 2, 22, 333, -46, -11])
+        expected: int = 3
+
+        self.assertEqual(first=expected, second=actual)
