@@ -67,3 +67,9 @@ class TestMain(unittest.TestCase):
         actual: bool = main.is_odd(x=4)
 
         self.assertFalse(actual)
+
+    def test_count_odd_numbers_00(self) -> None:
+        actual: int = main.count_odd_numbers(xs=[])
+        expected: int = 0
+
+        self.assertEqual(first=expected, second=actual)
