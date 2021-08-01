@@ -1,6 +1,10 @@
 from typing import List
 
 
+def pencils_of_rays(m: int, n: int) -> int:
+    return count_odd_numbers(xs=list_of_floors(m=m, n=n))
+
+
 def floor_division_squares(x: int, y: int) -> int:
     return (y*y) // (x*x)
 
