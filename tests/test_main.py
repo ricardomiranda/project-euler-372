@@ -122,3 +122,28 @@ class TestMain(unittest.TestCase):
         actual: List[int] = main.list_of_floors(m=1, n=3)
         expected: List[int] = [1, 2, 0, 1]
         self.assertEqual(first=actual, second=expected)
+
+    def test_pencils_of_rays_00(self) -> None:
+        actual: int = main.pencils_of_rays(m=0, n=0)
+        expected: int = 0
+        self.assertEqual(first=actual, second=expected)
+
+    def test_pencils_of_rays_01(self) -> None:
+        actual: int = main.pencils_of_rays(m=2, n=3)
+        expected: int = 1
+        self.assertEqual(first=actual, second=expected)
+
+    def test_pencils_of_rays_02(self) -> None:
+        actual: int = main.pencils_of_rays(m=1, n=3)
+        expected: int = 2
+        self.assertEqual(first=actual, second=expected)
+
+    def test_pencils_of_rays_03(self) -> None:
+        actual: int = main.pencils_of_rays(m=0, n=100)
+        expected: int = 3019
+        self.assertEqual(first=actual, second=expected)
+
+    def test_pencils_of_rays_04(self) -> None:
+        actual: int = main.pencils_of_rays(m=100, n=10000)
+        expected: int = 29750422
+        self.assertEqual(first=actual, second=expected)
