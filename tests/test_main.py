@@ -1,6 +1,5 @@
-from typing import List
 import unittest
-from unittest.loader import makeSuite
+from typing import List
 
 from app import main
 
